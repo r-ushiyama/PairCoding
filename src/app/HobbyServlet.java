@@ -50,7 +50,7 @@ public class HobbyServlet extends HttpServlet {
 				"MS_HOBBY MH, \n" +
 				"MS_CATEGORY MC \n" +
 				"where 1=1 \n" +
-				"and MS.SYAINID='0001' \n" +
+				"and MS.SYAINID='"+syainId+"' \n" +
 				"and MS.SYAINID=MSH.SYAINID \n" +
 				"and MSH.HOBBY_ID=MH.HOBBY_ID \n" +
 				"and MH.CATEGORY_ID=MC.CATEGORY_ID \n" ;
