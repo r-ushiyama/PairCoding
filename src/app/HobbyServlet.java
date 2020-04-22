@@ -43,7 +43,8 @@ public class HobbyServlet extends HttpServlet {
 		String sql="select \n" +
 				"ROWNUM NO, \n" +
 				"MC.CATEGORY_NAME, \n" +
-				"MH.HOBBY_NAME \n" +
+				"MH.HOBBY_NAME, \n" +
+				"MS.SYAINNAME \n" +
 				"from \n" +
 				"MS_SYAIN MS, \n" +
 				"MS_SYAIN_HOBBY MSH, \n" +
@@ -79,6 +80,7 @@ public class HobbyServlet extends HttpServlet {
 				hobby.setNo(rs1.getString("NO"));
 				hobby.setHobbyCategory(rs1.getString("CATEGORY_NAME"));
 				hobby.setHobby(rs1.getString("HOBBY_NAME"));
+				hobby.setsyainName(rs1.getString("SYAINNAME"));
 
 				hobbyList.add(hobby);
 			}

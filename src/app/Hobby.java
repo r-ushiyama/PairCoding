@@ -22,6 +22,8 @@ public class Hobby implements Serializable {
 
 	private String No;
 
+	private String syainName;
+
 
 	public String getHobby() {
 		return hobby;
@@ -51,11 +53,23 @@ public class Hobby implements Serializable {
 
 	}
 
+	public String getsyainName() {
+
+		return syainName;
+	}
+
+	public void setsyainName(String syainName) {
+		this.syainName = syainName;
+
+	}
+
 
 	@Override
 	public String toString() {
 		return "Hobby [hobby=" + hobby + ", hobbyCategory=" + hobbyCategory + "]";
 	}
+
+
 
 
 

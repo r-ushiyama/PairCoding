@@ -23,6 +23,12 @@ function executeAjax () {
 		success : function (json) {
 			console.log(json);
 			// DOM操作
+			if(json[0]!=null){
+				var syainName = json[0].syainName;
+				var syainElement = syainName+'さんの趣味一覧'
+				$('#syainName').html(syainElement);
+			}
+
 
 			for(var i=0;i<json.length;i++){
 				var hobby = json[i];
