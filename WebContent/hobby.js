@@ -21,12 +21,14 @@ function executeAjax () {
 		dataType : 'json',
 		data :requestQuery,
 		success : function (json) {
+			console.log(json);
 			// DOM操作
+			/*
 			var tableElement = '';
 			for(var i=0;i<json.length();i++){
 				var hobby = json[i];
-				tableElement
 			}
+			*/
 		}
 	});
 

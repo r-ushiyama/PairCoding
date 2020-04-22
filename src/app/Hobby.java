@@ -20,6 +20,8 @@ public class Hobby implements Serializable {
 	/** 趣味カテゴリ */
 	private String hobbyCategory;
 
+	private String No;
+
 
 	public String getHobby() {
 		return hobby;
@@ -40,10 +42,22 @@ public class Hobby implements Serializable {
 		this.hobbyCategory = hobbyCategory;
 	}
 
+	public String getNo() {
+		return No;
+	}
+
+	public void setNo(String No) {
+		this.No = No;
+
+	}
+
 
 	@Override
 	public String toString() {
 		return "Hobby [hobby=" + hobby + ", hobbyCategory=" + hobbyCategory + "]";
 	}
+
+
+
 
 }
