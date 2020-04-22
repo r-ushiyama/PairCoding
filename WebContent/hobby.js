@@ -23,12 +23,18 @@ function executeAjax () {
 		success : function (json) {
 			console.log(json);
 			// DOM操作
-			/*
+
 			var tableElement = '';
 			for(var i=0;i<json.length();i++){
 				var hobby = json[i];
+				tableElement='<tr>'
+								+'<td>'+hobby.no+'</td>'
+								+'<td>'+hobby.hobbyCategory+'</td>'
+								+'<td>'+hobby.hobby+'</td>'
+								+'</tr>'
+				$('#shainData').append(tableElement);
 			}
-			*/
+
 		}
 	});
 
