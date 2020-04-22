@@ -17,7 +17,7 @@ public class HobbyServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		// TODO 必須機能「趣味参照機能」
-
+		
 		// -- ここまで --
 	}
 
